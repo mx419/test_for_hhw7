@@ -3,7 +3,7 @@
 import numpy as np 
 import math
 import matplotlib.pyplot as plt
-from user_defined_exception import *
+
 
 #author: Muhe Xie
 #netID: mx419
@@ -36,6 +36,5 @@ def generate_mask_array(N):
         for k in range(N):
             complex_grid[i][k] = x_array[i]+1j*y_array[k]
             mask_array[i][k] = calculate_iteration(complex_grid[i][k])
-    if mask_array.size == 0:
-        raise Plot_Matrix_Empty_Error
+
     return mask_array

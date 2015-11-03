@@ -10,7 +10,6 @@ import create_2d_array
 import divide_array
 import mandelbrot
 import select_array_elements
-from user_defined_exception import *
 
 def generate_answe():
     '''the function will generate answers from 1 - 4'''
@@ -69,8 +68,7 @@ if __name__ == "__main__":
         print "the program has been interrupted by EOFERROR, thanks for trying, Goodbye"
     except TypeError:
         print "the program has been interrupted by TypeError, thanks for trying, Goodbye"
-    except Plot_Matrix_Empty_Error:
-        print "sorry, the plot matrix is empty, thanks for trying, Goodbye"
+
 
 
 

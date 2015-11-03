@@ -22,7 +22,7 @@ class Array_2D_Operations:
 
     def generate_array_2nd_column(self):
         '''the method will generate an array contain 2nd column in the basic 2D array'''
-        array_2nd_column = self.array_2D[:,1]
+        array_2nd_column = self.array_2D[:,1:2]
         return array_2nd_column
 
     def generate_array_in_rec_section(self):
@@ -35,5 +35,6 @@ class Array_2D_Operations:
         array_d = self.array_2D.ravel()
         array_d.sort()
         array_d = array_d[np.logical_and((array_d>=3), (array_d<=11))]
-        return array_d
+        array_d_2D = array_d.reshape(1,len(array_d))
+        return array_d_2D
 
